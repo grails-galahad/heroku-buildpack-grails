@@ -25,14 +25,14 @@ This is a Heroku buildpack for building and deploying Grails apps on Heroku.
     
 #### Create a Heroku app on the Cedar stack specifying my custom buildpack.
 
-    $ heroku create --stack cedar --buildpack https://github.com/csherstan/heroku-buildpack-grails.git
+    $ heroku create --stack cedar --buildpack https://github.com/grails-galahad/heroku-buildpack-grails.git
     Creating vivid-mist-9984... done, stack is cedar
     http://vivid-mist-9984.herokuapp.com/ | git@heroku.com:vivid-mist-9984.git
     Git remote heroku added
     
 If you already have an existing app on Heroku then specify the custom buildpack like so:
 
-	$ heroku config:add BUILDPACK_URL=https://github.com/csherstan/heroku-buildpack-grails.git
+	$ heroku config:add BUILDPACK_URL=https://github.com/grails-galahad/heroku-buildpack-grails.git
     
 #### Specifying a specific build environment
 
