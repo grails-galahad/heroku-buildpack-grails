@@ -191,3 +191,8 @@ PROFILE_PATH="$BUILD_DIR/.profile.d/grails.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="/app/.jdk/bin:$PATH"' >> $PROFILE_PATH
 
+# Cleanup to reduce slug size
+rm -rf $BUILD_DIR/target/assets
+rm -rf $BUILD_DIR/target/classes
+rm -rf $BUILD_DIR/target/test-classes
+rm -rf $BUILD_DIR/target/work
